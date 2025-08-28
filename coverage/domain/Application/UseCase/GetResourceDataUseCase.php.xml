@@ -1,0 +1,796 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="GetResourceDataUseCase.php" path="/domain/Application/UseCase">
+    <totals>
+      <lines total="106" comments="6" code="100" executable="27" executed="25" percent="92.59"/>
+      <methods count="2" tested="1" percent="50.00"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="1" tested="0" percent="0.00"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <class name="Domain\Application\UseCase\GetResourceDataUseCase" start="25" executable="27" executed="25" crap="6.01">
+      <namespace name="Domain\Application\UseCase"/>
+      <method name="__construct" signature="__construct(Domain\InterfaceAdapter\Gateway\Manager\ResourceDataManagerInterface $resourceDataManager, Domain\Application\UseCase\LockResourceDataUseCase $lockResourceDataUseCase)" start="27" end="30" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="execute" signature="execute(Small\CleanApplication\Contract\RequestInterface $request): Small\CleanApplication\Contract\ResponseInterface" start="32" end="103" crap="5.01" executable="26" executed="24" coverage="92.307692307692"/>
+    </class>
+    <coverage>
+      <line nr="67">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="79">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="99">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_data_without_lock"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+      </line>
+      <line nr="30">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_data_without_lock"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_rejects_invalid_request_type"/>
+      </line>
+      <line nr="35">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_data_without_lock"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_rejects_invalid_request_type"/>
+      </line>
+      <line nr="36">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_rejects_invalid_request_type"/>
+      </line>
+      <line nr="37">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_rejects_invalid_request_type"/>
+      </line>
+      <line nr="41">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_data_without_lock"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="42">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_data_without_lock"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="44">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="45">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="46">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="47">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="48">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="72">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="74">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="75">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="89">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_data_without_lock"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+      </line>
+      <line nr="94">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_data_without_lock"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+      </line>
+      <line nr="38">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_rejects_invalid_request_type"/>
+      </line>
+      <line nr="49">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="69">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="70">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="83">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails"/>
+      </line>
+      <line nr="101">
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_data_without_lock"/>
+        <covered by="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds"/>
+      </line>
+    </coverage>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2">
+        <token name="T_COMMENT">/*</token>
+      </line>
+      <line no="3">
+        <token name="T_COMMENT"> * This file is a part of Small Swoole Resource Server</token>
+      </line>
+      <line no="4">
+        <token name="T_COMMENT"> * Copyright 2025 - S&#xE9;bastien Kus</token>
+      </line>
+      <line no="5">
+        <token name="T_COMMENT"> * Under MIT Licence</token>
+      </line>
+      <line no="6">
+        <token name="T_COMMENT"> */</token>
+      </line>
+      <line no="7"/>
+      <line no="8">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Domain\Application\UseCase</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="9"/>
+      <line no="10">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Domain\Application\Entity\ResourceData</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="11">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Domain\Application\Exception\ApplicationBadRequest</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="12">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Domain\Application\Exception\ApplicationNotFoundException</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="13">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Domain\InterfaceAdapter\Gateway\Manager\Exception\NotFoundException</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="14">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Domain\InterfaceAdapter\Gateway\Manager\ResourceDataManagerInterface</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="15">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Domain\InterfaceAdapter\Gateway\UseCase\Request\CreateResourceRequestInterface</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="16">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Domain\InterfaceAdapter\Gateway\UseCase\Request\GetResourceDataRequestInterface</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="17">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Domain\InterfaceAdapter\Gateway\UseCase\Request\LockResourceDataRequestInterface</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="18">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Domain\InterfaceAdapter\Gateway\UseCase\Response\GetResourceDataResponseInterface</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="19">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Domain\InterfaceAdapter\Gateway\UseCase\Response\LockResourceDataResponseInterface</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="20">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Small\CleanApplication\Contract\RequestInterface</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="21">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Small\CleanApplication\Contract\ResponseInterface</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="22">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Small\CleanApplication\Contract\UseCaseInterface</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="23">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Small\CleanApplication\Facade</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="24"/>
+      <line no="25">
+        <token name="T_FINAL">final</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CLASS">class</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">GetResourceDataUseCase</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IMPLEMENTS">implements</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">UseCaseInterface</token>
+      </line>
+      <line no="26">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="27">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">__construct</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="28">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_PRIVATE">private</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">ResourceDataManagerInterface</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$resourceDataManager</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="29">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_PRIVATE">private</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">LockResourceDataUseCase</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$lockResourceDataUseCase</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="30">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="31"/>
+      <line no="32">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">execute</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">RequestInterface</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">ResponseInterface</token>
+      </line>
+      <line no="33">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="34"/>
+      <line no="35">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_INSTANCEOF">instanceof</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">GetResourceDataRequestInterface</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="36">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_THROW">throw</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">ApplicationBadRequest</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="37">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Request must be an instance of '</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOT">.</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">GetResourceDataRequestInterface</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_CLASS">class</token>
+      </line>
+      <line no="38">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="39">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="40"/>
+      <line no="41">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$ticket</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">null</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="42">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">shouldLock</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="43">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_DOC_COMMENT">/** @var LockResourceDataResponseInterface $response */</token>
+      </line>
+      <line no="44">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$response</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">lockResourceDataUseCase</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">execute</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="45">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CLASS">class</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="46">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">resourceName</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="47">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">selector</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="48">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">ticket</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="49">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IMPLEMENTS">implements</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">LockResourceDataRequestInterface</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="50"/>
+      <line no="51">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">__construct</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="52">
+        <token name="T_WHITESPACE">                        </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$resourceName</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="53">
+        <token name="T_WHITESPACE">                            </token>
+        <token name="T_STRING">get</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="54">
+        <token name="T_WHITESPACE">                                </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">resourceName</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="55">
+        <token name="T_WHITESPACE">                            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="56">
+        <token name="T_WHITESPACE">                        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="57">
+        <token name="T_WHITESPACE">                        </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$selector</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="58">
+        <token name="T_WHITESPACE">                            </token>
+        <token name="T_STRING">get</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="59">
+        <token name="T_WHITESPACE">                                </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">selector</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="60">
+        <token name="T_WHITESPACE">                            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="61">
+        <token name="T_WHITESPACE">                        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="62">
+        <token name="T_WHITESPACE">                        </token>
+        <token name="T_STRING">string</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_STRING">null</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$ticket</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="63">
+        <token name="T_WHITESPACE">                            </token>
+        <token name="T_STRING">get</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="64">
+        <token name="T_WHITESPACE">                                </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">ticket</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="65">
+        <token name="T_WHITESPACE">                            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="66">
+        <token name="T_WHITESPACE">                        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="67">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="68"/>
+      <line no="69">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="70">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="71"/>
+      <line no="72">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$ticket</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$response</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">ticket</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="73"/>
+      <line no="74">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_VARIABLE">$response</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">lockedSuccess</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="75">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CLASS">class</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$ticket</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IMPLEMENTS">implements</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">GetResourceDataResponseInterface</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="76"/>
+      <line no="77">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">__construct</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="78">
+        <token name="T_WHITESPACE">                        </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$ticket</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+        <token name="T_STRING">get</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">ticket</token>
+        <token name="T_SEMICOLON">;</token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="79">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="80"/>
+      <line no="81">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">null</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$resourceData</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+        <token name="T_STRING">get</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">null</token>
+        <token name="T_SEMICOLON">;</token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="82"/>
+      <line no="83">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="84">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="85"/>
+      <line no="86">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="87"/>
+      <line no="88">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_TRY">try</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="89">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$ressourceData</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">resourceDataManager</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">findByNameAndSelector</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">resourceName</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">selector</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="90">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CATCH">catch</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">NotFoundException</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="91">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_THROW">throw</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">ApplicationNotFoundException</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Resource/selector not found'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="92">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="93"/>
+      <line no="94">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CLASS">class</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$ressourceData</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$ticket</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IMPLEMENTS">implements</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">GetResourceDataResponseInterface</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="95"/>
+      <line no="96">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">__construct</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="97">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">ResourceData</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$resourceData</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="98">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_STRING">null</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$ticket</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="99">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="100"/>
+      <line no="101">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="102"/>
+      <line no="103">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="104"/>
+      <line no="105">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="106"/>
+    </source>
+  </file>
+</phpunit>

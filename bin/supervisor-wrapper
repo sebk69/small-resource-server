@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+set -a
+. /etc/small-swoole-resource-server.conf
+set +a
+exec /app/bin/http

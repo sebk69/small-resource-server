@@ -1,0 +1,20 @@
+services:
+  test-server:
+    container_name: small-swoole-resource-server
+    build: .
+    ports:
+      - 9501:9501
+    volumes:
+      - ./conf/supervisor.conf:/etc/supervisor/supervisor.conf
+      - ./conf/small-swoole-resource-server.conf:/etc/small-swoole-resource-server.conf
+      - .:/app
+  database:
+    container_name: small-swoole-resource-db
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: sebk7180
+    command: ["mysqld", "--mysql-native-password=FORCE"]
+    ports:
+      - 3306:3306
+    volumes:
+      - ./data/mysql:/var/lib/mysql

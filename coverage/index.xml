@@ -1,0 +1,592 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <build time="Fri Aug 29 1:14:33 CEST 2025" phpunit="11.5.33" coverage="11.0.11">
+    <runtime name="PHP" version="8.4.12" url="https://www.php.net/"/>
+    <driver name="pcov" version="1.0.12"/>
+  </build>
+  <project source="/app/src">
+    <tests>
+      <test name="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_throws_on_invalid_request_type" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_data_without_lock" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_rejects_invalid_request_type" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_throws_on_invalid_request_type" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_true_and_a_ticket_when_lock_is_acquired_immediately" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_false_and_a_ticket_when_lock_cannot_be_acquired_yet" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\UnlockResourceDataUseCaseTest::__pest_evaluable_it_UnlockResourceDataUseCase_throws_on_invalid_request_type" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_UpdateResourceDataUseCase_throws_on_invalid_request_type" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_" size="unknown" status="success"/>
+      <test name="P\Tests\Unit\ExceptionsTest::__pest_evaluable_HTTP_exceptions_hierarchy" size="unknown" status="success"/>
+      <test name="P\Tests\Unit\ExceptionsTest::__pest_evaluable_Application_exceptions_hierarchy" size="unknown" status="success"/>
+      <test name="P\Tests\Unit\HasIdentifierTest::__pest_evaluable_HasIdentifier_generates_26_char_identifier" size="unknown" status="success"/>
+      <test name="P\Tests\Unit\HasIdentifierTest::__pest_evaluable_HasIdentifier_base32_encoding_is_deterministic_for_same_input" size="unknown" status="success"/>
+      <test name="P\Tests\Unit\RouterActionTest::__pest_evaluable_POST__resource_dispatches_to_ResourceCreateAction" size="unknown" status="success"/>
+      <test name="P\Tests\Unit\RouterActionTest::__pest_evaluable_GET__resource__name___selector__dispatches_to_ResourceGetAction" size="unknown" status="success"/>
+      <test name="P\Tests\Unit\RouterActionTest::__pest_evaluable_GET__resource__name___selector__unlock_dispatches_to_ResourceUnlockAction" size="unknown" status="success"/>
+      <test name="P\Tests\Unit\RouterActionTest::__pest_evaluable_PUT__resource__name___selector__dispatches_to_ResourceUpdateAction" size="unknown" status="success"/>
+      <test name="P\Tests\Unit\RouterActionTest::__pest_evaluable_unknown_route_throws_NotFoundHttpException" size="unknown" status="success"/>
+      <test name="P\Tests\Unit\RouterTest::__pest_evaluable_Router_throws_NotFound_on_unknown_route" size="unknown" status="success"/>
+    </tests>
+    <directory name="/">
+      <totals>
+        <lines total="1902" comments="280" code="1622" executable="320" executed="255" percent="79.69"/>
+        <methods count="22" tested="9" percent="40.91"/>
+        <functions count="0" tested="0" percent="0"/>
+        <classes count="11" tested="2" percent="18.18"/>
+        <traits count="1" tested="0" percent="0.00"/>
+      </totals>
+      <directory name="domain">
+        <totals>
+          <lines total="980" comments="176" code="804" executable="195" executed="165" percent="84.62"/>
+          <methods count="12" tested="6" percent="50.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="5" tested="2" percent="40.00"/>
+          <traits count="1" tested="0" percent="0.00"/>
+        </totals>
+        <directory name="Application">
+          <totals>
+            <lines total="752" comments="114" code="638" executable="195" executed="165" percent="84.62"/>
+            <methods count="12" tested="6" percent="50.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="5" tested="2" percent="40.00"/>
+            <traits count="1" tested="0" percent="0.00"/>
+          </totals>
+          <directory name="Entity">
+            <totals>
+              <lines total="286" comments="62" code="224" executable="78" executed="67" percent="85.90"/>
+              <methods count="4" tested="1" percent="25.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="1" tested="0" percent="0.00"/>
+            </totals>
+            <directory name="Trait">
+              <totals>
+                <lines total="196" comments="45" code="151" executable="78" executed="67" percent="85.90"/>
+                <methods count="4" tested="1" percent="25.00"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="1" tested="0" percent="0.00"/>
+              </totals>
+              <file name="HasIdentifier.php" href="domain/Application/Entity/Trait/HasIdentifier.php.xml">
+                <totals>
+                  <lines total="196" comments="45" code="151" executable="78" executed="67" percent="85.90"/>
+                  <methods count="4" tested="1" percent="25.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="0" tested="0" percent="0"/>
+                  <traits count="1" tested="0" percent="0.00"/>
+                </totals>
+              </file>
+            </directory>
+            <file name="Resource.php" href="domain/Application/Entity/Resource.php.xml">
+              <totals>
+                <lines total="53" comments="9" code="44" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="ResourceData.php" href="domain/Application/Entity/ResourceData.php.xml">
+              <totals>
+                <lines total="37" comments="8" code="29" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+          </directory>
+          <directory name="Exception">
+            <totals>
+              <lines total="75" comments="25" code="50" executable="0" executed="0" percent="0"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+            <file name="ApplicationBadRequest.php" href="domain/Application/Exception/ApplicationBadRequest.php.xml">
+              <totals>
+                <lines total="13" comments="5" code="8" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="ApplicationConflictException.php" href="domain/Application/Exception/ApplicationConflictException.php.xml">
+              <totals>
+                <lines total="11" comments="5" code="6" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="ApplicationException.php" href="domain/Application/Exception/ApplicationException.php.xml">
+              <totals>
+                <lines total="13" comments="5" code="8" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="ApplicationNotFoundException.php" href="domain/Application/Exception/ApplicationNotFoundException.php.xml">
+              <totals>
+                <lines total="11" comments="5" code="6" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="ApplicationValidationFailException.php" href="domain/Application/Exception/ApplicationValidationFailException.php.xml">
+              <totals>
+                <lines total="27" comments="5" code="22" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+          </directory>
+          <directory name="UseCase">
+            <totals>
+              <lines total="391" comments="27" code="364" executable="117" executed="98" percent="83.76"/>
+              <methods count="8" tested="5" percent="62.50"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="5" tested="2" percent="40.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+            <file name="CreateResourceUseCase.php" href="domain/Application/UseCase/CreateResourceUseCase.php.xml">
+              <totals>
+                <lines total="66" comments="5" code="61" executable="23" executed="18" percent="78.26"/>
+                <methods count="2" tested="1" percent="50.00"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="1" tested="0" percent="0.00"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="GetResourceDataUseCase.php" href="domain/Application/UseCase/GetResourceDataUseCase.php.xml">
+              <totals>
+                <lines total="106" comments="6" code="100" executable="27" executed="25" percent="92.59"/>
+                <methods count="2" tested="1" percent="50.00"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="1" tested="0" percent="0.00"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="LockResourceDataUseCase.php" href="domain/Application/UseCase/LockResourceDataUseCase.php.xml">
+              <totals>
+                <lines total="52" comments="5" code="47" executable="14" executed="14" percent="100.00"/>
+                <methods count="1" tested="1" percent="100.00"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="1" tested="1" percent="100.00"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="UnlockResourceDataUseCase.php" href="domain/Application/UseCase/UnlockResourceDataUseCase.php.xml">
+              <totals>
+                <lines total="47" comments="5" code="42" executable="10" executed="10" percent="100.00"/>
+                <methods count="1" tested="1" percent="100.00"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="1" tested="1" percent="100.00"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="UpdateResourceDataUseCase.php" href="domain/Application/UseCase/UpdateResourceDataUseCase.php.xml">
+              <totals>
+                <lines total="120" comments="6" code="114" executable="43" executed="31" percent="72.09"/>
+                <methods count="2" tested="1" percent="50.00"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="1" tested="0" percent="0.00"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+          </directory>
+        </directory>
+        <directory name="InterfaceAdapter">
+          <totals>
+            <lines total="228" comments="62" code="166" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+          <directory name="Gateway">
+            <totals>
+              <lines total="228" comments="62" code="166" executable="0" executed="0" percent="0"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+            <directory name="Manager">
+              <totals>
+                <lines total="61" comments="22" code="39" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+              <directory name="Exception">
+                <totals>
+                  <lines total="26" comments="10" code="16" executable="0" executed="0" percent="0"/>
+                  <methods count="0" tested="0" percent="0"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="0" tested="0" percent="0"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+                <file name="NotFoundException.php" href="domain/InterfaceAdapter/Gateway/Manager/Exception/NotFoundException.php.xml">
+                  <totals>
+                    <lines total="13" comments="5" code="8" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="OrmException.php" href="domain/InterfaceAdapter/Gateway/Manager/Exception/OrmException.php.xml">
+                  <totals>
+                    <lines total="13" comments="5" code="8" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+              </directory>
+              <file name="ResourceDataManagerInterface.php" href="domain/InterfaceAdapter/Gateway/Manager/ResourceDataManagerInterface.php.xml">
+                <totals>
+                  <lines total="17" comments="6" code="11" executable="0" executed="0" percent="0"/>
+                  <methods count="0" tested="0" percent="0"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="0" tested="0" percent="0"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+              </file>
+              <file name="ResourceManagerInterface.php" href="domain/InterfaceAdapter/Gateway/Manager/ResourceManagerInterface.php.xml">
+                <totals>
+                  <lines total="18" comments="6" code="12" executable="0" executed="0" percent="0"/>
+                  <methods count="0" tested="0" percent="0"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="0" tested="0" percent="0"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+              </file>
+            </directory>
+            <directory name="UseCase">
+              <totals>
+                <lines total="167" comments="40" code="127" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+              <directory name="Request">
+                <totals>
+                  <lines total="106" comments="25" code="81" executable="0" executed="0" percent="0"/>
+                  <methods count="0" tested="0" percent="0"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="0" tested="0" percent="0"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+                <file name="CreateResourceRequestInterface.php" href="domain/InterfaceAdapter/Gateway/UseCase/Request/CreateResourceRequestInterface.php.xml">
+                  <totals>
+                    <lines total="24" comments="5" code="19" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="GetResourceDataRequestInterface.php" href="domain/InterfaceAdapter/Gateway/UseCase/Request/GetResourceDataRequestInterface.php.xml">
+                  <totals>
+                    <lines total="21" comments="5" code="16" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="LockResourceDataRequestInterface.php" href="domain/InterfaceAdapter/Gateway/UseCase/Request/LockResourceDataRequestInterface.php.xml">
+                  <totals>
+                    <lines total="20" comments="5" code="15" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="UnlockResourceDataRequestInterface.php" href="domain/InterfaceAdapter/Gateway/UseCase/Request/UnlockResourceDataRequestInterface.php.xml">
+                  <totals>
+                    <lines total="20" comments="5" code="15" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="UpdateResourceDataRequestInterface.php" href="domain/InterfaceAdapter/Gateway/UseCase/Request/UpdateResourceDataRequestInterface.php.xml">
+                  <totals>
+                    <lines total="21" comments="5" code="16" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+              </directory>
+              <directory name="Response">
+                <totals>
+                  <lines total="61" comments="15" code="46" executable="0" executed="0" percent="0"/>
+                  <methods count="0" tested="0" percent="0"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="0" tested="0" percent="0"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+                <file name="CreateResourceResponseInterface.php" href="domain/InterfaceAdapter/Gateway/UseCase/Response/CreateResourceResponseInterface.php.xml">
+                  <totals>
+                    <lines total="21" comments="5" code="16" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="GetResourceDataResponseInterface.php" href="domain/InterfaceAdapter/Gateway/UseCase/Response/GetResourceDataResponseInterface.php.xml">
+                  <totals>
+                    <lines total="20" comments="5" code="15" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="LockResourceDataResponseInterface.php" href="domain/InterfaceAdapter/Gateway/UseCase/Response/LockResourceDataResponseInterface.php.xml">
+                  <totals>
+                    <lines total="20" comments="5" code="15" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+              </directory>
+            </directory>
+          </directory>
+        </directory>
+      </directory>
+      <directory name="infrastructure">
+        <totals>
+          <lines total="922" comments="104" code="818" executable="125" executed="90" percent="72.00"/>
+          <methods count="10" tested="3" percent="30.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="6" tested="0" percent="0.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <directory name="Actions">
+          <totals>
+            <lines total="362" comments="28" code="334" executable="104" executed="73" percent="70.19"/>
+            <methods count="9" tested="3" percent="33.33"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="5" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+          <file name="AbstractAction.php" href="infrastructure/Actions/AbstractAction.php.xml">
+            <totals>
+              <lines total="75" comments="6" code="69" executable="23" executed="15" percent="65.22"/>
+              <methods count="5" tested="3" percent="60.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="0" percent="0.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="ResourceCreateAction.php" href="infrastructure/Actions/ResourceCreateAction.php.xml">
+            <totals>
+              <lines total="64" comments="6" code="58" executable="21" executed="12" percent="57.14"/>
+              <methods count="1" tested="0" percent="0.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="0" percent="0.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="ResourceGetAction.php" href="infrastructure/Actions/ResourceGetAction.php.xml">
+            <totals>
+              <lines total="90" comments="6" code="84" executable="28" executed="18" percent="64.29"/>
+              <methods count="1" tested="0" percent="0.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="0" percent="0.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="ResourceUnlockAction.php" href="infrastructure/Actions/ResourceUnlockAction.php.xml">
+            <totals>
+              <lines total="71" comments="5" code="66" executable="17" executed="16" percent="94.12"/>
+              <methods count="1" tested="0" percent="0.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="0" percent="0.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="ResourceUpdateAction.php" href="infrastructure/Actions/ResourceUpdateAction.php.xml">
+            <totals>
+              <lines total="62" comments="5" code="57" executable="15" executed="12" percent="80.00"/>
+              <methods count="1" tested="0" percent="0.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="0" percent="0.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+        </directory>
+        <directory name="Http">
+          <totals>
+            <lines total="108" comments="25" code="83" executable="21" executed="17" percent="80.95"/>
+            <methods count="1" tested="0" percent="0.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+          <directory name="Exception">
+            <totals>
+              <lines total="52" comments="20" code="32" executable="0" executed="0" percent="0"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+            <file name="ConflictHttpException.php" href="infrastructure/Http/Exception/ConflictHttpException.php.xml">
+              <totals>
+                <lines total="13" comments="5" code="8" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="HttpException.php" href="infrastructure/Http/Exception/HttpException.php.xml">
+              <totals>
+                <lines total="13" comments="5" code="8" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="NotFoundHttpException.php" href="infrastructure/Http/Exception/NotFoundHttpException.php.xml">
+              <totals>
+                <lines total="13" comments="5" code="8" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="UnauthorizedException.php" href="infrastructure/Http/Exception/UnauthorizedException.php.xml">
+              <totals>
+                <lines total="13" comments="5" code="8" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+          </directory>
+          <file name="Router.php" href="infrastructure/Http/Router.php.xml">
+            <totals>
+              <lines total="56" comments="5" code="51" executable="21" executed="17" percent="80.95"/>
+              <methods count="1" tested="0" percent="0.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="0" percent="0.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+        </directory>
+        <directory name="Orm">
+          <totals>
+            <lines total="260" comments="35" code="225" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+          <directory name="Entity">
+            <totals>
+              <lines total="98" comments="16" code="82" executable="0" executed="0" percent="0"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+            <file name="OrmResource.php" href="infrastructure/Orm/Entity/OrmResource.php.xml">
+              <totals>
+                <lines total="44" comments="8" code="36" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="OrmResourceData.php" href="infrastructure/Orm/Entity/OrmResourceData.php.xml">
+              <totals>
+                <lines total="54" comments="8" code="46" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+          </directory>
+          <directory name="Manager">
+            <totals>
+              <lines total="162" comments="19" code="143" executable="0" executed="0" percent="0"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+            <file name="ResourceDataManager.php" href="infrastructure/Orm/Manager/ResourceDataManager.php.xml">
+              <totals>
+                <lines total="85" comments="10" code="75" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="ResourceManager.php" href="infrastructure/Orm/Manager/ResourceManager.php.xml">
+              <totals>
+                <lines total="77" comments="9" code="68" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+          </directory>
+        </directory>
+        <file name="HttpKernel.php" href="infrastructure/HttpKernel.php.xml">
+          <totals>
+            <lines total="62" comments="8" code="54" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="Kernel.php" href="infrastructure/Kernel.php.xml">
+          <totals>
+            <lines total="130" comments="8" code="122" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+    </directory>
+  </project>
+</phpunit>

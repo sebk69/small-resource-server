@@ -1,0 +1,58 @@
+{
+  "name": "small/swoole-resource-server",
+  "description": "Resource http server swoole based",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sébastien Kus",
+      "email": "sebastien.kus@small-project.dev"
+    }
+  ],
+  "keywords": [
+    "php",
+    "swoole",
+    "resource",
+    "http-server",
+    "async",
+    "key-value"
+  ],
+  "require": {
+    "php": "^8.4",
+    "small/swoole-entity-manager-core": "*",
+    "small/swoole-patterns": "23.0.0",
+    "small/forms": "*",
+    "small/clean-application": "*",
+    "small/env": "*",
+    "ext-swoole": "*"
+  },
+  "require-dev": {
+    "swoole/ide-helper": "6.0.2",
+    "phpstan/phpstan": "^2.0",
+    "pestphp/pest": "^3.0",
+    "rector/rector": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Domain\\": "src/domain",
+      "Infrastructure\\": "src/infrastructure"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/pest",
+    "analyse": "vendor/bin/phpstan analyse src",
+    "rectify": "vendor/bin/rector"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
