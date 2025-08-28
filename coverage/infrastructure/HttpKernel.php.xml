@@ -253,6 +253,9 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_VARIABLE">$res</token>
         <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">void</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
