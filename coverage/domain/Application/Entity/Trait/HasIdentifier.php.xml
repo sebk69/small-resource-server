@@ -2,17 +2,17 @@
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
   <file name="HasIdentifier.php" path="/domain/Application/Entity/Trait">
     <totals>
-      <lines total="196" comments="45" code="151" executable="78" executed="65" percent="83.33"/>
+      <lines total="196" comments="45" code="151" executable="78" executed="67" percent="85.90"/>
       <methods count="4" tested="1" percent="25.00"/>
       <functions count="0" tested="0" percent="0"/>
       <classes count="0" tested="0" percent="0"/>
       <traits count="1" tested="0" percent="0.00"/>
     </totals>
-    <trait name="Domain\Application\Entity\Trait\HasIdentifier" start="13" executable="78" executed="65" crap="38.04">
+    <trait name="Domain\Application\Entity\Trait\HasIdentifier" start="13" executable="78" executed="67" crap="36.05">
       <namespace name="Domain\Application\Entity\Trait"/>
       <method name="getId" signature="getId(): ?string" start="32" end="35" crap="1" executable="1" executed="1" coverage="100"/>
       <method name="init" signature="init(): void" start="38" end="81" crap="17.84" executable="21" executed="18" coverage="85.714285714286"/>
-      <method name="generateId" signature="generateId(): self" start="86" end="154" crap="9.97" executable="35" executed="27" coverage="77.142857142857"/>
+      <method name="generateId" signature="generateId(): self" start="86" end="154" crap="9.41" executable="35" executed="29" coverage="82.857142857143"/>
       <method name="encodeBase32Crockford" signature="encodeBase32Crockford(string $binary): string" start="159" end="194" crap="6.03" executable="21" executed="19" coverage="90.47619047619"/>
     </trait>
     <coverage>
@@ -167,6 +167,12 @@
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
         <covered by="P\Tests\Unit\HasIdentifierTest::__pest_evaluable_HasIdentifier_generates_26_char_identifier"/>
         <covered by="P\Tests\Unit\HasIdentifierTest::__pest_evaluable_HasIdentifier_base32_encoding_is_deterministic_for_same_input"/>
+      </line>
+      <line nr="104">
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+      </line>
+      <line nr="105">
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
       </line>
       <line nr="117">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
