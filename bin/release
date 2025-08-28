@@ -57,6 +57,10 @@ printf "\e[32mPublish version $version release...\e[0m\n"
 echo $version > .version
 
 # Tag commit
+if ! ssh-add -l >/dev/null 2>&1; then
+  eval "$(ssh-agent -s)"
+  ssh-add ~/.ssh/id_ed25519   # ou ~/.ssh/id_rsa si tu utilises RSA
+fi
 git add --all
 git commit -m "Tag $version"
 git push
