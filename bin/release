@@ -75,3 +75,4 @@ docker buildx use multi
 # 2) Build & push multi-arch
 docker login
 docker buildx build --platform linux/amd64,linux/arm64 -t smallphp/small-resource-server:$(cat .version) --push .
+docker buildx build --platform linux/amd64,linux/arm64 -t smallphp/small-resource-server:latest --push .
