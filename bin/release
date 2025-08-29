@@ -68,6 +68,12 @@ git tag $version
 git push --tags
 
 # push container
-REPO=smallphp/small-resource-server
-TAG=$(cat .version)
-docker buildx build --platform linux/amd64,linux/arm64 -t $REPO:$TAG --push .
+# 1) Create & use a buildx builder that runs in a container
+docker buildx create --name multi --driver docker-container --bootstrap
+docker buildx use multi
+
+# (optional but helpful) register QEMU emulators for cross-arch
+docker run --privileged --rm tonistiigi/binfmt --install all
+
+# 2) Build & push multi-arch
+docker buildx build --platform linux/amd64,linux/arm64 -t smallphp/small-resource-server:$(cat .version) --push .
