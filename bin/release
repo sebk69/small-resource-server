@@ -69,7 +69,7 @@ git push --tags
 
 # push container
 # 1) Create & use a buildx builder that runs in a container
-docker buildx create --name multi --driver docker-container --bootstrap
+docker buildx create --name multi --driver docker-container --bootstrap || echo ""
 docker buildx use multi
 
 # 2) Build & push multi-arch
