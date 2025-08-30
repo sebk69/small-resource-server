@@ -8,6 +8,7 @@
 namespace Domain\Application\UseCase;
 
 use Domain\Application\Exception\ApplicationBadRequest;
+use Domain\InterfaceAdapter\Gateway\Manager\ResourceManagerInterface;
 use Domain\InterfaceAdapter\Gateway\UseCase\Request\LockResourceDataRequestInterface;
 use Domain\InterfaceAdapter\Gateway\UseCase\Response\LockResourceDataResponseInterface;
 use Infrastructure\Kernel;
@@ -19,6 +20,11 @@ use Small\SwoolePatterns\Resource\Enum\GetResourceBehaviour;
 
 class LockResourceDataUseCase implements UseCaseInterface
 {
+
+    public function __construct(
+        private ResourceManagerInterface $resourceManager,
+    ) {}
+
     public function execute(RequestInterface $request): ResponseInterface
     {
 
@@ -30,12 +36,23 @@ class LockResourceDataUseCase implements UseCaseInterface
 
         $resource = Kernel::$resourceFactory->get($request->resourceName . ':' . $request->selector);
 
+        $resourceDefinition = $this->resourceManager->findByName($request->resourceName);
+
         $ticket = null;
         if ($request->ticket !== null) {
             $ticket = new Ticket($request->ticket);
         }
 
-        $ticket = $resource->acquireResource(GetResourceBehaviour::getTicket, $ticket);
+        if ($resourceDefinition->timeout == 0) {
+            $ticket = $resource->acquireResource(GetResourceBehaviour::waitingForFree, $ticket);
+        } else {
+
+            $time = time();
+            do {
+                $ticket = $resource->acquireResource(GetResourceBehaviour::getTicket, $ticket);
+            } while($ticket->isWaiting() && $time + $resourceDefinition->timeout < time());
+
+        }
 
         return new class(!$ticket->isWaiting(), $ticket->getTicketId())
             implements LockResourceDataResponseInterface

@@ -14,19 +14,6 @@ use Domain\InterfaceAdapter\Gateway\UseCase\Request\GetResourceDataRequestInterf
 use Domain\InterfaceAdapter\Gateway\UseCase\Response\LockResourceDataResponseInterface;
 use Small\CleanApplication\Contract\RequestInterface;
 
-// Simple fakes
-class FakeResourceDataManager implements ResourceDataManagerInterface {
-    public function findByNameAndSelector(string $resourceName, string $selector): ResourceData {
-        $rd = new ResourceData();
-        $rd->generateId();
-        $rd->idResource = $resourceName;
-        $rd->selector = $selector;
-        $rd->data = json_encode(['ok' => true], JSON_THROW_ON_ERROR);
-        return $rd;
-    }
-    public function applicationPersist(ResourceData $data): self { return $this; }
-}
-
 class FakeLockUseCase extends LockResourceDataUseCase {
     public function __construct() {}
     public function execute(RequestInterface $request): \Small\CleanApplication\Contract\ResponseInterface {

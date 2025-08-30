@@ -18,10 +18,10 @@ use Small\Forms\ValidationRule\ValidateString;
 /**
  * @codeCoverageIgnore
  */
-final class Resource
+class Resource
 {
 
-    const int fallbackTimeout = 10;
+    const int fallbackTimeout = 0;
 
     use HasIdentifier;
 

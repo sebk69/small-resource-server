@@ -23,6 +23,6 @@ class FakeResourceManager implements ResourceManagerInterface {
 
     public function existsByName(string $name): bool
     {
-        return true;
+        return false;
     }
 }

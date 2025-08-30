@@ -3,7 +3,7 @@
 use Domain\Application\UseCase\UnlockResourceDataUseCase;
 use Domain\InterfaceAdapter\Gateway\UseCase\Request\UnlockResourceDataRequestInterface;
 use Small\CleanApplication\Contract\ResponseInterface;
-use Infrastructure\Kernel;
+
 
 it('UnlockResourceDataUseCase throws on invalid request type', function (): void {
     $uc = new UnlockResourceDataUseCase();
@@ -31,7 +31,12 @@ it('UnlockResourceDataUseCase releases resource with provided ticket (success pa
         public function __construct(public string $resourceName, public ?string $selector, public ?string $ticket) {}
     };
 
+    $resource = new ResourceStub(true, 't-123');
+    \Infrastructure\Kernel::$resourceFactory->resource = $resource;
+
     $uc = new UnlockResourceDataUseCase();
     $uc->execute($request);
+
+    expect($resource->incomingTicketId)->toBe('t-123');
 
 });

@@ -34,7 +34,7 @@ class FakeResourceGetUseCase implements \Small\CleanApplication\Contract\UseCase
 
 }
 
-class FakeResourceUnlockUseCase implements \Small\CleanApplication\Contract\UseCaseInterface {
+class FakeResourceUnlockUseCase extends \Domain\Application\UseCase\UnlockResourceDataUseCase {
 
     public static bool $called = false;
 

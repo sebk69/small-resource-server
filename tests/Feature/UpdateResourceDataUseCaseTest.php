@@ -11,12 +11,26 @@ use Domain\InterfaceAdapter\Gateway\UseCase\Request\UpdateResourceDataRequestInt
 use Domain\InterfaceAdapter\Gateway\UseCase\Response\LockResourceDataResponseInterface;
 use Small\CleanApplication\Contract\RequestInterface;
 use Small\CleanApplication\Contract\ResponseInterface;
-use Tests\Feature\FakeManagers\FakeResourceManager;
-use Tests\Feature\FakeManagers\FakeResourceDataManager;
+
+function makeLockRequest(?string $ticket = null): \Domain\InterfaceAdapter\Gateway\UseCase\Request\LockResourceDataRequestInterface {
+    return new class('printer', 'sel-1', $ticket) implements \Domain\InterfaceAdapter\Gateway\UseCase\Request\LockResourceDataRequestInterface {
+        public function __construct(
+            public string $resourceName,
+            public ?string $selector,
+            public ?string $ticket
+        ) {}
+    };
+}
 
 // Keep the user's invalid-type test
 it('UpdateResourceDataUseCase throws on invalid request type', function (): void {
-    $uc = new UpdateResourceDataUseCase(new FakeResourceManager(), new FakeResourceDataManager(), new \Domain\Application\UseCase\LockResourceDataUseCase(), new \Domain\Application\UseCase\UnlockResourceDataUseCase());
+
+    $uc = new UpdateResourceDataUseCase(
+        new FakeResourceManager(),
+        new FakeResourceDataManager(),
+        new \Domain\Application\UseCase\LockResourceDataUseCase(new FakeResourceManager()),
+        new \Domain\Application\UseCase\UnlockResourceDataUseCase()
+    );
     $invalid = new class implements RequestInterface {};
     $uc->execute($invalid);
 })->throws(ApplicationBadRequest::class);
@@ -26,21 +40,9 @@ it('UpdateResourceDataUseCase throws on invalid request type', function (): void
 /**
  * Request DTO implementing UpdateResourceDataRequestInterface.
  */
-function makeUpdateRequest(string $name, string $selector, string $json): UpdateResourceDataRequestInterface {
+function makeUpdateRequest(string $name, string $selector, $ticket, string $json): UpdateResourceDataRequestInterface {
 
-    /** @var LockResourceDataResponseInterface $lockResponse */
-    $lockResponse = \Small\CleanApplication\Facade::execute(
-        LockResourceDataUseCase::class,
-        new class($name, $selector) implements \Domain\InterfaceAdapter\Gateway\UseCase\Request\LockResourceDataRequestInterface {
-            public function __construct(
-                public string $resourceName,
-                public string $selector,
-                public null|string $ticket = null
-            ) {}
-        }
-    );
-
-    return new class($name, $selector, $json, $lockResponse->ticket) implements UpdateResourceDataRequestInterface {
+    return new class($name, $selector, $json, $ticket) implements UpdateResourceDataRequestInterface {
         public function __construct(public string $resourceName, public string $selector, public string $json, public string $ticket) {}
     };
 }
@@ -58,34 +60,12 @@ it('updates resource data successfully when no previous data exists', function (
         }
     };
 
-    // Fake manager that records persistence and pretends the name is not taken
-    $manager = new class implements \Domain\InterfaceAdapter\Gateway\Manager\ResourceManagerInterface {
-        public ?\Domain\Application\Entity\Resource $persisted = null;
-        public function findByName(string $name): \Domain\Application\Entity\Resource { return new \Domain\Application\Entity\Resource(); }
-        public function existsByName(string $name): bool { return false; } // available
-        public function applicationPersist(\Domain\Application\Entity\Resource $resource): \Domain\InterfaceAdapter\Gateway\Manager\ResourceManagerInterface {
-            $this->persisted = $resource;
-            return $this;
-        }
-    };
-
-    $ucCR = new \Domain\Application\UseCase\CreateResourceUseCase($manager);
-
-    // Valid request DTO implementing the interface (PHP 8.4 property hooks)
-    $request = new class('printer', 120) implements \Domain\InterfaceAdapter\Gateway\UseCase\Request\CreateResourceRequestInterface {
-        public function __construct(private string $name_, private int $timeout_) {}
-        public string $name { get { return $this->name_; } }
-        public int $timeout { get { return $this->timeout_; } }
-    };
-
-    $ucCR->execute($request);
-
-    $lock = new LockResourceDataUseCase();
-    $unlock = new UnlockResourceDataUseCase();
-
-    $uc = new UpdateResourceDataUseCase($rm, $rdm, $lock, $unlock);
-
-    $req = makeUpdateRequest('printer', 'A4', json_encode(['status' => 'ready'], JSON_THROW_ON_ERROR));
+    /** @var LockResourceDataResponseInterface $lockResponse */
+    FakeResourceManager::$timeout = 0;
+    $lockResponse = ($luc = new LockResourceDataUseCase($rs = new FakeResourceManager()))->execute(makeLockRequest('sel-1'));
+    $unlock = new FakeResourceUnlockUseCase();
+    $uc = new UpdateResourceDataUseCase($rm, $rdm, $luc, $unlock);
+    $req = makeUpdateRequest('printer', 'A4', 'sel-1', json_encode(['status' => 'ready'], JSON_THROW_ON_ERROR));
 
     $resp = $uc->execute($req);
     expect($resp)->toBeInstanceOf(ResponseInterface::class)
@@ -117,11 +97,12 @@ it('updates resource data when an entry already exists (overwrite)', function ()
         }
     };
 
-    $lock = new LockResourceDataUseCase();
-    $unlock = new UnlockResourceDataUseCase();
-
-    $uc = new UpdateResourceDataUseCase($rm, $rdm, $lock, $unlock);
-    $req = makeUpdateRequest('printer', 'A4', json_encode(['status' => 'new'], JSON_THROW_ON_ERROR), );
+    /** @var LockResourceDataResponseInterface $lockResponse */
+    FakeResourceManager::$timeout = 0;
+    $lockResponse = ($luc = new LockResourceDataUseCase($rs = new FakeResourceManager()))->execute(makeLockRequest('sel-1'));
+    $unlock = new FakeResourceUnlockUseCase();
+    $uc = new UpdateResourceDataUseCase($rm, $rdm, $luc, $unlock);
+    $req = makeUpdateRequest('printer', 'A4', 'sel-1', json_encode(['status' => 'new'], JSON_THROW_ON_ERROR));
 
     $resp = $uc->execute($req);
     expect($resp)->toBeInstanceOf(ResponseInterface::class)

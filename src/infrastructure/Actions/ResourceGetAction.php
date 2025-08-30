@@ -36,7 +36,7 @@ final class ResourceGetAction extends AbstractAction
             /** @var GetResourceDataResponseInterface $response */
             $response = Facade::execute(
                 GetResourceDataUseCase::class,
-                new class($resourceName, $selector, !($req->get['lock'] == '0'), $this->ticket)
+                new class($resourceName, $selector, !(($req->get['lock'] ?? '1') == '0'), $this->ticket)
                     implements GetResourceDataRequestInterface
                 {
                     public function __construct(
