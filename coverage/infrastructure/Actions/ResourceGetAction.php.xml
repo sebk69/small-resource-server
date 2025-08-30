@@ -376,12 +376,18 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_EXCLAMATION_MARK">!</token>
         <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_OPEN_BRACKET">(</token>
         <token name="T_VARIABLE">$req</token>
         <token name="T_OBJECT_OPERATOR">-&gt;</token>
         <token name="T_STRING">get</token>
         <token name="T_OPEN_SQUARE">[</token>
         <token name="T_CONSTANT_ENCAPSED_STRING">'lock'</token>
         <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COALESCE">??</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'1'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_IS_EQUAL">==</token>
         <token name="T_WHITESPACE"> </token>

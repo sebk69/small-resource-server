@@ -15,8 +15,7 @@
     <coverage>
       <line nr="27">
         <covered by="P\Tests\Feature\UnlockResourceDataUseCaseTest::__pest_evaluable_it_UnlockResourceDataUseCase_throws_on_invalid_request_type"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+        <covered by="P\Tests\Feature\UnlockResourceDataUseCaseTest::__pest_evaluable_it_UnlockResourceDataUseCase_releases_resource_with_provided_ticket__success_path_"/>
       </line>
       <line nr="28">
         <covered by="P\Tests\Feature\UnlockResourceDataUseCaseTest::__pest_evaluable_it_UnlockResourceDataUseCase_throws_on_invalid_request_type"/>
@@ -25,28 +24,22 @@
         <covered by="P\Tests\Feature\UnlockResourceDataUseCaseTest::__pest_evaluable_it_UnlockResourceDataUseCase_throws_on_invalid_request_type"/>
       </line>
       <line nr="33">
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+        <covered by="P\Tests\Feature\UnlockResourceDataUseCaseTest::__pest_evaluable_it_UnlockResourceDataUseCase_releases_resource_with_provided_ticket__success_path_"/>
       </line>
       <line nr="35">
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+        <covered by="P\Tests\Feature\UnlockResourceDataUseCaseTest::__pest_evaluable_it_UnlockResourceDataUseCase_releases_resource_with_provided_ticket__success_path_"/>
       </line>
       <line nr="36">
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+        <covered by="P\Tests\Feature\UnlockResourceDataUseCaseTest::__pest_evaluable_it_UnlockResourceDataUseCase_releases_resource_with_provided_ticket__success_path_"/>
       </line>
       <line nr="37">
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+        <covered by="P\Tests\Feature\UnlockResourceDataUseCaseTest::__pest_evaluable_it_UnlockResourceDataUseCase_releases_resource_with_provided_ticket__success_path_"/>
       </line>
       <line nr="40">
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+        <covered by="P\Tests\Feature\UnlockResourceDataUseCaseTest::__pest_evaluable_it_UnlockResourceDataUseCase_releases_resource_with_provided_ticket__success_path_"/>
       </line>
       <line nr="42">
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+        <covered by="P\Tests\Feature\UnlockResourceDataUseCaseTest::__pest_evaluable_it_UnlockResourceDataUseCase_releases_resource_with_provided_ticket__success_path_"/>
       </line>
       <line nr="30">
         <covered by="P\Tests\Feature\UnlockResourceDataUseCaseTest::__pest_evaluable_it_UnlockResourceDataUseCase_throws_on_invalid_request_type"/>

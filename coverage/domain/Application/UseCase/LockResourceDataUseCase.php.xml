@@ -2,88 +2,148 @@
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
   <file name="LockResourceDataUseCase.php" path="/domain/Application/UseCase">
     <totals>
-      <lines total="52" comments="5" code="47" executable="14" executed="14" percent="100.00"/>
-      <methods count="1" tested="1" percent="100.00"/>
+      <lines total="69" comments="5" code="64" executable="20" executed="20" percent="100.00"/>
+      <methods count="2" tested="2" percent="100.00"/>
       <functions count="0" tested="0" percent="0"/>
       <classes count="1" tested="1" percent="100.00"/>
       <traits count="0" tested="0" percent="0"/>
     </totals>
-    <class name="Domain\Application\UseCase\LockResourceDataUseCase" start="20" executable="14" executed="14" crap="3">
+    <class name="Domain\Application\UseCase\LockResourceDataUseCase" start="21" executable="20" executed="20" crap="6">
       <namespace name="Domain\Application\UseCase"/>
-      <method name="execute" signature="execute(Small\CleanApplication\Contract\RequestInterface $request): Small\CleanApplication\Contract\ResponseInterface" start="22" end="49" crap="3" executable="14" executed="14" coverage="100"/>
+      <method name="__construct" signature="__construct(Domain\InterfaceAdapter\Gateway\Manager\ResourceManagerInterface $resourceManager)" start="24" end="26" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="execute" signature="execute(Small\CleanApplication\Contract\RequestInterface $request): Small\CleanApplication\Contract\ResponseInterface" start="28" end="66" crap="5" executable="19" executed="19" coverage="100"/>
     </class>
     <coverage>
-      <line nr="46">
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_true_and_a_ticket_when_lock_is_acquired_immediately"/>
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_false_and_a_ticket_when_lock_cannot_be_acquired_yet"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
-      </line>
-      <line nr="25">
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_throws_on_invalid_request_type"/>
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_true_and_a_ticket_when_lock_is_acquired_immediately"/>
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_false_and_a_ticket_when_lock_cannot_be_acquired_yet"/>
+      <line nr="63">
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_waitingForFree_and_succeeds_when_resource_immediately_free"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
       </line>
       <line nr="26">
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_throws_on_invalid_request_type"/>
-      </line>
-      <line nr="27">
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_throws_on_invalid_request_type"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_throws_on_invalid_request_type"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_waitingForFree_and_succeeds_when_resource_immediately_free"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_UpdateResourceDataUseCase_throws_on_invalid_request_type"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
       </line>
       <line nr="31">
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_true_and_a_ticket_when_lock_is_acquired_immediately"/>
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_false_and_a_ticket_when_lock_cannot_be_acquired_yet"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_throws_on_invalid_request_type"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_waitingForFree_and_succeeds_when_resource_immediately_free"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+      </line>
+      <line nr="32">
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_throws_on_invalid_request_type"/>
       </line>
       <line nr="33">
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_true_and_a_ticket_when_lock_is_acquired_immediately"/>
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_false_and_a_ticket_when_lock_cannot_be_acquired_yet"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_throws_on_invalid_request_type"/>
+      </line>
+      <line nr="37">
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_waitingForFree_and_succeeds_when_resource_immediately_free"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
       </line>
-      <line nr="34">
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_true_and_a_ticket_when_lock_is_acquired_immediately"/>
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_false_and_a_ticket_when_lock_cannot_be_acquired_yet"/>
+      <line nr="39">
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_waitingForFree_and_succeeds_when_resource_immediately_free"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
-      </line>
-      <line nr="35">
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
-      </line>
-      <line nr="38">
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_true_and_a_ticket_when_lock_is_acquired_immediately"/>
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_false_and_a_ticket_when_lock_cannot_be_acquired_yet"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
-      </line>
-      <line nr="40">
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_true_and_a_ticket_when_lock_is_acquired_immediately"/>
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_false_and_a_ticket_when_lock_cannot_be_acquired_yet"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
-      </line>
-      <line nr="28">
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_throws_on_invalid_request_type"/>
       </line>
       <line nr="41">
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_true_and_a_ticket_when_lock_is_acquired_immediately"/>
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_false_and_a_ticket_when_lock_cannot_be_acquired_yet"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_waitingForFree_and_succeeds_when_resource_immediately_free"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
       </line>
       <line nr="42">
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_true_and_a_ticket_when_lock_is_acquired_immediately"/>
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_false_and_a_ticket_when_lock_cannot_be_acquired_yet"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_waitingForFree_and_succeeds_when_resource_immediately_free"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+      </line>
+      <line nr="43">
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+      </line>
+      <line nr="46">
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_waitingForFree_and_succeeds_when_resource_immediately_free"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
       </line>
       <line nr="47">
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_true_and_a_ticket_when_lock_is_acquired_immediately"/>
-        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_false_and_a_ticket_when_lock_cannot_be_acquired_yet"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_waitingForFree_and_succeeds_when_resource_immediately_free"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+      </line>
+      <line nr="50">
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
+      </line>
+      <line nr="52">
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
+      </line>
+      <line nr="53">
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
+      </line>
+      <line nr="57">
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_waitingForFree_and_succeeds_when_resource_immediately_free"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+      </line>
+      <line nr="34">
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_throws_on_invalid_request_type"/>
+      </line>
+      <line nr="58">
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_waitingForFree_and_succeeds_when_resource_immediately_free"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+      </line>
+      <line nr="59">
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_waitingForFree_and_succeeds_when_resource_immediately_free"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
+        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
+      </line>
+      <line nr="64">
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_waitingForFree_and_succeeds_when_resource_immediately_free"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting"/>
+        <covered by="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string"/>
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
         <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_"/>
       </line>
@@ -124,53 +184,59 @@
       <line no="11">
         <token name="T_USE">use</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_NAME_QUALIFIED">Domain\InterfaceAdapter\Gateway\UseCase\Request\LockResourceDataRequestInterface</token>
+        <token name="T_NAME_QUALIFIED">Domain\InterfaceAdapter\Gateway\Manager\ResourceManagerInterface</token>
         <token name="T_SEMICOLON">;</token>
       </line>
       <line no="12">
         <token name="T_USE">use</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_NAME_QUALIFIED">Domain\InterfaceAdapter\Gateway\UseCase\Response\LockResourceDataResponseInterface</token>
+        <token name="T_NAME_QUALIFIED">Domain\InterfaceAdapter\Gateway\UseCase\Request\LockResourceDataRequestInterface</token>
         <token name="T_SEMICOLON">;</token>
       </line>
       <line no="13">
         <token name="T_USE">use</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_NAME_QUALIFIED">Infrastructure\Kernel</token>
+        <token name="T_NAME_QUALIFIED">Domain\InterfaceAdapter\Gateway\UseCase\Response\LockResourceDataResponseInterface</token>
         <token name="T_SEMICOLON">;</token>
       </line>
       <line no="14">
         <token name="T_USE">use</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_NAME_QUALIFIED">Small\CleanApplication\Contract\RequestInterface</token>
+        <token name="T_NAME_QUALIFIED">Infrastructure\Kernel</token>
         <token name="T_SEMICOLON">;</token>
       </line>
       <line no="15">
         <token name="T_USE">use</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_NAME_QUALIFIED">Small\CleanApplication\Contract\ResponseInterface</token>
+        <token name="T_NAME_QUALIFIED">Small\CleanApplication\Contract\RequestInterface</token>
         <token name="T_SEMICOLON">;</token>
       </line>
       <line no="16">
         <token name="T_USE">use</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_NAME_QUALIFIED">Small\CleanApplication\Contract\UseCaseInterface</token>
+        <token name="T_NAME_QUALIFIED">Small\CleanApplication\Contract\ResponseInterface</token>
         <token name="T_SEMICOLON">;</token>
       </line>
       <line no="17">
         <token name="T_USE">use</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_NAME_QUALIFIED">Small\SwoolePatterns\Resource\Bean\Ticket</token>
+        <token name="T_NAME_QUALIFIED">Small\CleanApplication\Contract\UseCaseInterface</token>
         <token name="T_SEMICOLON">;</token>
       </line>
       <line no="18">
         <token name="T_USE">use</token>
         <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Small\SwoolePatterns\Resource\Bean\Ticket</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="19">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
         <token name="T_NAME_QUALIFIED">Small\SwoolePatterns\Resource\Enum\GetResourceBehaviour</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="19"/>
-      <line no="20">
+      <line no="20"/>
+      <line no="21">
         <token name="T_CLASS">class</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">LockResourceDataUseCase</token>
@@ -179,10 +245,37 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">UseCaseInterface</token>
       </line>
-      <line no="21">
+      <line no="22">
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="22">
+      <line no="23"/>
+      <line no="24">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">__construct</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="25">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_PRIVATE">private</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">ResourceManagerInterface</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$resourceManager</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="26">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="27"/>
+      <line no="28">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -198,12 +291,12 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">ResponseInterface</token>
       </line>
-      <line no="23">
+      <line no="29">
         <token name="T_WHITESPACE">    </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="24"/>
-      <line no="25">
+      <line no="30"/>
+      <line no="31">
         <token name="T_WHITESPACE">        </token>
         <token name="T_IF">if</token>
         <token name="T_WHITESPACE"> </token>
@@ -218,7 +311,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="26">
+      <line no="32">
         <token name="T_WHITESPACE">            </token>
         <token name="T_THROW">throw</token>
         <token name="T_WHITESPACE"> </token>
@@ -227,7 +320,7 @@
         <token name="T_STRING">ApplicationBadRequest</token>
         <token name="T_OPEN_BRACKET">(</token>
       </line>
-      <line no="27">
+      <line no="33">
         <token name="T_WHITESPACE">                </token>
         <token name="T_CONSTANT_ENCAPSED_STRING">'Request must be an instance of '</token>
         <token name="T_WHITESPACE"> </token>
@@ -237,17 +330,17 @@
         <token name="T_DOUBLE_COLON">::</token>
         <token name="T_CLASS">class</token>
       </line>
-      <line no="28">
+      <line no="34">
         <token name="T_WHITESPACE">            </token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="29">
+      <line no="35">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="30"/>
-      <line no="31">
+      <line no="36"/>
+      <line no="37">
         <token name="T_WHITESPACE">        </token>
         <token name="T_VARIABLE">$resource</token>
         <token name="T_WHITESPACE"> </token>
@@ -275,8 +368,27 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="32"/>
-      <line no="33">
+      <line no="38"/>
+      <line no="39">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$resourceDefinition</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">resourceManager</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">findByName</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">resourceName</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="40"/>
+      <line no="41">
         <token name="T_WHITESPACE">        </token>
         <token name="T_VARIABLE">$ticket</token>
         <token name="T_WHITESPACE"> </token>
@@ -285,7 +397,7 @@
         <token name="T_STRING">null</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="34">
+      <line no="42">
         <token name="T_WHITESPACE">        </token>
         <token name="T_IF">if</token>
         <token name="T_WHITESPACE"> </token>
@@ -301,7 +413,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="35">
+      <line no="43">
         <token name="T_WHITESPACE">            </token>
         <token name="T_VARIABLE">$ticket</token>
         <token name="T_WHITESPACE"> </token>
@@ -317,13 +429,74 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="36">
+      <line no="44">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="37"/>
-      <line no="38">
+      <line no="45"/>
+      <line no="46">
         <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$resourceDefinition</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">timeout</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_EQUAL">==</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">0</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="47">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$ticket</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$resource</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">acquireResource</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">GetResourceBehaviour</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">waitingForFree</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$ticket</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="48">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ELSE">else</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="49"/>
+      <line no="50">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$time</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">time</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="51">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_DO">do</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="52">
+        <token name="T_WHITESPACE">                </token>
         <token name="T_VARIABLE">$ticket</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_EQUAL">=</token>
@@ -341,8 +514,43 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="39"/>
-      <line no="40">
+      <line no="53">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_WHILE">while</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$ticket</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">isWaiting</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$time</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_PLUS">+</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$resourceDefinition</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">timeout</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LT">&lt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">time</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="54"/>
+      <line no="55">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="56"/>
+      <line no="57">
         <token name="T_WHITESPACE">        </token>
         <token name="T_RETURN">return</token>
         <token name="T_WHITESPACE"> </token>
@@ -365,17 +573,17 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_CLOSE_BRACKET">)</token>
       </line>
-      <line no="41">
+      <line no="58">
         <token name="T_WHITESPACE">            </token>
         <token name="T_IMPLEMENTS">implements</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">LockResourceDataResponseInterface</token>
       </line>
-      <line no="42">
+      <line no="59">
         <token name="T_WHITESPACE">        </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="43">
+      <line no="60">
         <token name="T_WHITESPACE">            </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -384,7 +592,7 @@
         <token name="T_STRING">__construct</token>
         <token name="T_OPEN_BRACKET">(</token>
       </line>
-      <line no="44">
+      <line no="61">
         <token name="T_WHITESPACE">                </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -393,7 +601,7 @@
         <token name="T_VARIABLE">$lockedSuccess</token>
         <token name="T_COMMA">,</token>
       </line>
-      <line no="45">
+      <line no="62">
         <token name="T_WHITESPACE">                </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -404,26 +612,26 @@
         <token name="T_VARIABLE">$ticket</token>
         <token name="T_COMMA">,</token>
       </line>
-      <line no="46">
+      <line no="63">
         <token name="T_WHITESPACE">            </token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="47">
+      <line no="64">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CLOSE_CURLY">}</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="48"/>
-      <line no="49">
+      <line no="65"/>
+      <line no="66">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="50"/>
-      <line no="51"/>
-      <line no="52">
+      <line no="67"/>
+      <line no="68"/>
+      <line no="69">
         <token name="T_CLOSE_CURLY">}</token>
       </line>
     </source>

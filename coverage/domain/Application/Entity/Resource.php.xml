@@ -91,8 +91,6 @@
         <token name="T_DOC_COMMENT"> */</token>
       </line>
       <line no="21">
-        <token name="T_FINAL">final</token>
-        <token name="T_WHITESPACE"> </token>
         <token name="T_CLASS">class</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">Resource</token>
@@ -111,7 +109,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_EQUAL">=</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_LNUMBER">10</token>
+        <token name="T_LNUMBER">0</token>
         <token name="T_SEMICOLON">;</token>
       </line>
       <line no="25"/>

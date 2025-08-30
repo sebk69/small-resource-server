@@ -16,17 +16,14 @@
     <coverage>
       <line nr="61">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
       <line nr="27">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_throws_on_invalid_request_type"/>
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
       <line nr="32">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_throws_on_invalid_request_type"/>
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
       <line nr="33">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_throws_on_invalid_request_type"/>
@@ -36,54 +33,42 @@
       </line>
       <line nr="38">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
       <line nr="42">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
       <line nr="43">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
       <line nr="44">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
       <line nr="45">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
       <line nr="47">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
       <line nr="49">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
       <line nr="50">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
       <line nr="51">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
       <line nr="58">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
       <line nr="60">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
       <line nr="35">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_throws_on_invalid_request_type"/>
       </line>
       <line nr="62">
         <covered by="P\Tests\Feature\CreateResourceUseCaseTest::__pest_evaluable_it_CreateResourceUseCase_persists_and_returns_the_created_resource"/>
-        <covered by="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists"/>
       </line>
     </coverage>
     <source>

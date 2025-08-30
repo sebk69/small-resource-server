@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <build time="Fri Aug 29 22:40:36 CEST 2025" phpunit="11.5.33" coverage="11.0.11">
+  <build time="Sun Aug 31 0:42:13 CEST 2025" phpunit="11.5.33" coverage="11.0.11">
     <runtime name="PHP" version="8.4.12" url="https://www.php.net/"/>
     <driver name="pcov" version="1.0.12"/>
   </build>
@@ -12,10 +12,13 @@
       <test name="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_locks_then_returns_data_when_lock_succeeds" size="unknown" status="success"/>
       <test name="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_returns_only_ticket_when_lock_fails" size="unknown" status="success"/>
       <test name="P\Tests\Feature\GetResourceDataUseCaseTest::__pest_evaluable_GetResourceDataUseCase_rejects_invalid_request_type" size="unknown" status="success"/>
-      <test name="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_throws_on_invalid_request_type" size="unknown" status="success"/>
-      <test name="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_true_and_a_ticket_when_lock_is_acquired_immediately" size="unknown" status="success"/>
-      <test name="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_LockResourceDataUseCase_returns_lockedSuccess_false_and_a_ticket_when_lock_cannot_be_acquired_yet" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_throws_on_invalid_request_type" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_waitingForFree_and_succeeds_when_resource_immediately_free" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_succeeds_when_not_waiting" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_timeout_0_uses_getTicket_and_returns_lockedSuccess_false_when_still_waiting" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\LockResourceDataUseCaseTest::__pest_evaluable_it_passes_through_an_incoming_ticket_string" size="unknown" status="success"/>
       <test name="P\Tests\Feature\UnlockResourceDataUseCaseTest::__pest_evaluable_it_UnlockResourceDataUseCase_throws_on_invalid_request_type" size="unknown" status="success"/>
+      <test name="P\Tests\Feature\UnlockResourceDataUseCaseTest::__pest_evaluable_it_UnlockResourceDataUseCase_releases_resource_with_provided_ticket__success_path_" size="unknown" status="success"/>
       <test name="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_UpdateResourceDataUseCase_throws_on_invalid_request_type" size="unknown" status="success"/>
       <test name="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_successfully_when_no_previous_data_exists" size="unknown" status="success"/>
       <test name="P\Tests\Feature\UpdateResourceDataUseCaseTest::__pest_evaluable_it_updates_resource_data_when_an_entry_already_exists__overwrite_" size="unknown" status="success"/>
@@ -32,24 +35,24 @@
     </tests>
     <directory name="/">
       <totals>
-        <lines total="1902" comments="280" code="1622" executable="320" executed="255" percent="79.69"/>
-        <methods count="22" tested="9" percent="40.91"/>
+        <lines total="1919" comments="280" code="1639" executable="326" executed="261" percent="80.06"/>
+        <methods count="23" tested="10" percent="43.48"/>
         <functions count="0" tested="0" percent="0"/>
         <classes count="11" tested="2" percent="18.18"/>
         <traits count="1" tested="0" percent="0.00"/>
       </totals>
       <directory name="domain">
         <totals>
-          <lines total="980" comments="176" code="804" executable="195" executed="165" percent="84.62"/>
-          <methods count="12" tested="6" percent="50.00"/>
+          <lines total="997" comments="176" code="821" executable="201" executed="171" percent="85.07"/>
+          <methods count="13" tested="7" percent="53.85"/>
           <functions count="0" tested="0" percent="0"/>
           <classes count="5" tested="2" percent="40.00"/>
           <traits count="1" tested="0" percent="0.00"/>
         </totals>
         <directory name="Application">
           <totals>
-            <lines total="752" comments="114" code="638" executable="195" executed="165" percent="84.62"/>
-            <methods count="12" tested="6" percent="50.00"/>
+            <lines total="769" comments="114" code="655" executable="201" executed="171" percent="85.07"/>
+            <methods count="13" tested="7" percent="53.85"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="5" tested="2" percent="40.00"/>
             <traits count="1" tested="0" percent="0.00"/>
@@ -155,8 +158,8 @@
           </directory>
           <directory name="UseCase">
             <totals>
-              <lines total="391" comments="27" code="364" executable="117" executed="98" percent="83.76"/>
-              <methods count="8" tested="5" percent="62.50"/>
+              <lines total="408" comments="27" code="381" executable="123" executed="104" percent="84.55"/>
+              <methods count="9" tested="6" percent="66.67"/>
               <functions count="0" tested="0" percent="0"/>
               <classes count="5" tested="2" percent="40.00"/>
               <traits count="0" tested="0" percent="0"/>
@@ -181,8 +184,8 @@
             </file>
             <file name="LockResourceDataUseCase.php" href="domain/Application/UseCase/LockResourceDataUseCase.php.xml">
               <totals>
-                <lines total="52" comments="5" code="47" executable="14" executed="14" percent="100.00"/>
-                <methods count="1" tested="1" percent="100.00"/>
+                <lines total="69" comments="5" code="64" executable="20" executed="20" percent="100.00"/>
+                <methods count="2" tested="2" percent="100.00"/>
                 <functions count="0" tested="0" percent="0"/>
                 <classes count="1" tested="1" percent="100.00"/>
                 <traits count="0" tested="0" percent="0"/>
