@@ -14,7 +14,7 @@ interface UpdateResourceDataRequestInterface extends RequestInterface
 
     public string $resourceName {get;}
     public string|null $selector {get;}
-    public string $ticket {get;}
+    public string|null $ticket {get;}
     public string $json {get;}
 
 }

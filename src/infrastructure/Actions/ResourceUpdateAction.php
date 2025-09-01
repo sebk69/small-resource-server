@@ -38,7 +38,7 @@ final class ResourceUpdateAction extends AbstractAction
                     public function __construct(
                         public string $resourceName { get {return $this->resourceName; }},
                         public string|null $selector { get {return $this->selector; }},
-                        public string $ticket { get {return $this->ticket; }},
+                        public string|null $ticket { get {return $this->ticket; }},
                         public string $json { get {return $this->json; }},
                     ) {}
 
