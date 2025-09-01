@@ -54,7 +54,7 @@ final class UpdateResourceDataUseCase implements UseCaseInterface
                 public function __construct(
                     public string $resourceName,
                     public string $selector,
-                    public string $ticket,
+                    public string|null $ticket,
                 ) {}
 
             }
