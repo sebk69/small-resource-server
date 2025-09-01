@@ -8,10 +8,10 @@
       <classes count="1" tested="0" percent="0.00"/>
       <traits count="0" tested="0" percent="0"/>
     </totals>
-    <class name="Domain\Application\UseCase\UpdateResourceDataUseCase" start="30" executable="43" executed="31" crap="8.06">
+    <class name="Domain\Application\UseCase\UpdateResourceDataUseCase" start="30" executable="43" executed="31" crap="6.78">
       <namespace name="Domain\Application\UseCase"/>
       <method name="__construct" signature="__construct(Domain\InterfaceAdapter\Gateway\Manager\ResourceManagerInterface $resourceManager, Domain\InterfaceAdapter\Gateway\Manager\ResourceDataManagerInterface $resourceDataManager, Domain\Application\UseCase\LockResourceDataUseCase $lockResourceDataUseCase, Domain\Application\UseCase\UnlockResourceDataUseCase $unlockResourceDataUseCase)" start="32" end="37" crap="1" executable="1" executed="1" coverage="100"/>
-      <method name="execute" signature="execute(Small\CleanApplication\Contract\RequestInterface $request): Small\CleanApplication\Contract\ResponseInterface" start="39" end="117" crap="6.84" executable="42" executed="30" coverage="71.428571428571"/>
+      <method name="execute" signature="execute(Small\CleanApplication\Contract\RequestInterface $request): Small\CleanApplication\Contract\ResponseInterface" start="39" end="117" crap="5.58" executable="42" executed="30" coverage="71.428571428571"/>
     </class>
     <coverage>
       <line nr="58">
@@ -525,18 +525,6 @@
         <token name="T_VARIABLE">$response</token>
         <token name="T_OBJECT_OPERATOR">-&gt;</token>
         <token name="T_STRING">lockedSuccess</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_VARIABLE">$request</token>
-        <token name="T_OBJECT_OPERATOR">-&gt;</token>
-        <token name="T_STRING">ticket</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_IS_EQUAL">==</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_VARIABLE">$response</token>
-        <token name="T_OBJECT_OPERATOR">-&gt;</token>
-        <token name="T_STRING">ticket</token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>

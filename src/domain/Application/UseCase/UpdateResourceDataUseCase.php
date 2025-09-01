@@ -60,7 +60,7 @@ final class UpdateResourceDataUseCase implements UseCaseInterface
             }
         );
 
-        if ($response->lockedSuccess && $request->ticket == $response->ticket) {
+        if ($response->lockedSuccess) {
 
             try {
                 $resourceData = $this->resourceDataManager->findByNameAndSelector(
