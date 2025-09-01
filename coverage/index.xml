@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <build time="Sun Aug 31 0:42:13 CEST 2025" phpunit="11.5.33" coverage="11.0.11">
+  <build time="Mon Sep 1 21:29:27 CEST 2025" phpunit="11.5.33" coverage="11.0.11">
     <runtime name="PHP" version="8.4.12" url="https://www.php.net/"/>
     <driver name="pcov" version="1.0.12"/>
   </build>
@@ -35,7 +35,7 @@
     </tests>
     <directory name="/">
       <totals>
-        <lines total="1919" comments="280" code="1639" executable="326" executed="261" percent="80.06"/>
+        <lines total="1915" comments="280" code="1635" executable="324" executed="260" percent="80.25"/>
         <methods count="23" tested="10" percent="43.48"/>
         <functions count="0" tested="0" percent="0"/>
         <classes count="11" tested="2" percent="18.18"/>
@@ -385,7 +385,7 @@
       </directory>
       <directory name="infrastructure">
         <totals>
-          <lines total="922" comments="104" code="818" executable="125" executed="90" percent="72.00"/>
+          <lines total="918" comments="104" code="814" executable="123" executed="89" percent="72.36"/>
           <methods count="10" tested="3" percent="30.00"/>
           <functions count="0" tested="0" percent="0"/>
           <classes count="6" tested="0" percent="0.00"/>
@@ -393,7 +393,7 @@
         </totals>
         <directory name="Actions">
           <totals>
-            <lines total="362" comments="28" code="334" executable="104" executed="73" percent="70.19"/>
+            <lines total="358" comments="28" code="330" executable="102" executed="72" percent="70.59"/>
             <methods count="9" tested="3" percent="33.33"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="5" tested="0" percent="0.00"/>
@@ -437,7 +437,7 @@
           </file>
           <file name="ResourceUpdateAction.php" href="infrastructure/Actions/ResourceUpdateAction.php.xml">
             <totals>
-              <lines total="62" comments="5" code="57" executable="15" executed="12" percent="80.00"/>
+              <lines total="58" comments="5" code="53" executable="13" executed="11" percent="84.62"/>
               <methods count="1" tested="0" percent="0.00"/>
               <functions count="0" tested="0" percent="0"/>
               <classes count="1" tested="0" percent="0.00"/>

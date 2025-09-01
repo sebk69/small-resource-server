@@ -28,10 +28,6 @@ final class ResourceUpdateAction extends AbstractAction
 
         $json = $req->rawContent() ?: '{}';
 
-        if (empty($this->ticket)) {
-            throw new HttpException('ticket is mandatory');
-        }
-
         try {
             Facade::execute(
 
