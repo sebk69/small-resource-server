@@ -88,7 +88,15 @@ final class GetResourceDataUseCase implements UseCaseInterface
         try {
             $ressourceData = $this->resourceDataManager->findByNameAndSelector($request->resourceName, $request->selector);
         } catch (NotFoundException) {
-            throw new ApplicationNotFoundException('Resource/selector not found');
+            return new class($ticket) implements GetResourceDataResponseInterface {
+
+                public function __construct(
+                    public string $ticket {get {return $this->ticket;}},
+                ) {}
+
+                public null $resourceData {get {return null;}}
+
+            };
         }
 
         return new class($ressourceData, $ticket) implements GetResourceDataResponseInterface {

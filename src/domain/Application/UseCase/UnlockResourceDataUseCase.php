@@ -30,7 +30,7 @@ class UnlockResourceDataUseCase implements UseCaseInterface
             );
         }
 
-        $resource = Kernel::$resourceFactory->get($request->resourceName . ':' . $request->selector);
+        $resource = Kernel::$resourceFactory->get($request->resourceName);
 
         $ticket = null;
         if ($request->ticket !== null) {

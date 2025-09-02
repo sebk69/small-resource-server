@@ -7,6 +7,7 @@
 
 namespace Infrastructure\Http;
 
+use Infrastructure\Actions\ResourceLockAction;
 use Infrastructure\Http\Exception\NotFoundHttpException;
 use Swoole\Http\Request;
 use Swoole\Http\Response;
@@ -39,6 +40,14 @@ final class Router
                 return;
             }
         }
+
+        if (preg_match('#^/resource/([^/]+)/([^/]+)/lock$#', $path, $m)) {
+            if ($method === 'PUT') {
+                new ResourceLockAction()->initRequest($req)->handle($req, $res, $m[1], $m[2]);
+                return;
+            }
+        }
+
         if (preg_match('#^/resource/([^/]+)/([^/]+)$#', $path, $m)) {
             if ($method === 'GET')  {
                 new ResourceGetAction()->initRequest($req)->handle($req, $res, $m[1], $m[2]);

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <build time="Mon Sep 1 22:58:57 CEST 2025" phpunit="11.5.33" coverage="11.0.11">
+  <build time="Tue Sep 2 9:22:18 CEST 2025" phpunit="11.5.33" coverage="11.0.11">
     <runtime name="PHP" version="8.4.12" url="https://www.php.net/"/>
     <driver name="pcov" version="1.0.12"/>
   </build>
@@ -35,15 +35,15 @@
     </tests>
     <directory name="/">
       <totals>
-        <lines total="1915" comments="280" code="1635" executable="324" executed="260" percent="80.25"/>
-        <methods count="23" tested="10" percent="43.48"/>
+        <lines total="2003" comments="286" code="1717" executable="345" executed="262" percent="75.94"/>
+        <methods count="24" tested="10" percent="41.67"/>
         <functions count="0" tested="0" percent="0"/>
-        <classes count="11" tested="2" percent="18.18"/>
+        <classes count="12" tested="2" percent="16.67"/>
         <traits count="1" tested="0" percent="0.00"/>
       </totals>
       <directory name="domain">
         <totals>
-          <lines total="997" comments="176" code="821" executable="201" executed="171" percent="85.07"/>
+          <lines total="1005" comments="176" code="829" executable="204" executed="172" percent="84.31"/>
           <methods count="13" tested="7" percent="53.85"/>
           <functions count="0" tested="0" percent="0"/>
           <classes count="5" tested="2" percent="40.00"/>
@@ -51,7 +51,7 @@
         </totals>
         <directory name="Application">
           <totals>
-            <lines total="769" comments="114" code="655" executable="201" executed="171" percent="85.07"/>
+            <lines total="777" comments="114" code="663" executable="204" executed="172" percent="84.31"/>
             <methods count="13" tested="7" percent="53.85"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="5" tested="2" percent="40.00"/>
@@ -59,7 +59,7 @@
           </totals>
           <directory name="Entity">
             <totals>
-              <lines total="286" comments="62" code="224" executable="78" executed="67" percent="85.90"/>
+              <lines total="285" comments="62" code="223" executable="78" executed="67" percent="85.90"/>
               <methods count="4" tested="1" percent="25.00"/>
               <functions count="0" tested="0" percent="0"/>
               <classes count="0" tested="0" percent="0"/>
@@ -85,7 +85,7 @@
             </directory>
             <file name="Resource.php" href="domain/Application/Entity/Resource.php.xml">
               <totals>
-                <lines total="53" comments="9" code="44" executable="0" executed="0" percent="0"/>
+                <lines total="52" comments="9" code="43" executable="0" executed="0" percent="0"/>
                 <methods count="0" tested="0" percent="0"/>
                 <functions count="0" tested="0" percent="0"/>
                 <classes count="0" tested="0" percent="0"/>
@@ -158,7 +158,7 @@
           </directory>
           <directory name="UseCase">
             <totals>
-              <lines total="408" comments="27" code="381" executable="123" executed="104" percent="84.55"/>
+              <lines total="417" comments="27" code="390" executable="126" executed="105" percent="83.33"/>
               <methods count="9" tested="6" percent="66.67"/>
               <functions count="0" tested="0" percent="0"/>
               <classes count="5" tested="2" percent="40.00"/>
@@ -175,7 +175,7 @@
             </file>
             <file name="GetResourceDataUseCase.php" href="domain/Application/UseCase/GetResourceDataUseCase.php.xml">
               <totals>
-                <lines total="106" comments="6" code="100" executable="27" executed="25" percent="92.59"/>
+                <lines total="114" comments="6" code="108" executable="29" executed="25" percent="86.21"/>
                 <methods count="2" tested="1" percent="50.00"/>
                 <functions count="0" tested="0" percent="0"/>
                 <classes count="1" tested="0" percent="0.00"/>
@@ -184,7 +184,7 @@
             </file>
             <file name="LockResourceDataUseCase.php" href="domain/Application/UseCase/LockResourceDataUseCase.php.xml">
               <totals>
-                <lines total="69" comments="5" code="64" executable="20" executed="20" percent="100.00"/>
+                <lines total="70" comments="5" code="65" executable="21" executed="21" percent="100.00"/>
                 <methods count="2" tested="2" percent="100.00"/>
                 <functions count="0" tested="0" percent="0"/>
                 <classes count="1" tested="1" percent="100.00"/>
@@ -385,18 +385,18 @@
       </directory>
       <directory name="infrastructure">
         <totals>
-          <lines total="918" comments="104" code="814" executable="123" executed="89" percent="72.36"/>
-          <methods count="10" tested="3" percent="30.00"/>
+          <lines total="998" comments="110" code="888" executable="141" executed="90" percent="63.83"/>
+          <methods count="11" tested="3" percent="27.27"/>
           <functions count="0" tested="0" percent="0"/>
-          <classes count="6" tested="0" percent="0.00"/>
+          <classes count="7" tested="0" percent="0.00"/>
           <traits count="0" tested="0" percent="0"/>
         </totals>
         <directory name="Actions">
           <totals>
-            <lines total="358" comments="28" code="330" executable="102" executed="72" percent="70.59"/>
-            <methods count="9" tested="3" percent="33.33"/>
+            <lines total="429" comments="34" code="395" executable="116" executed="72" percent="62.07"/>
+            <methods count="10" tested="3" percent="30.00"/>
             <functions count="0" tested="0" percent="0"/>
-            <classes count="5" tested="0" percent="0.00"/>
+            <classes count="6" tested="0" percent="0.00"/>
             <traits count="0" tested="0" percent="0"/>
           </totals>
           <file name="AbstractAction.php" href="infrastructure/Actions/AbstractAction.php.xml">
@@ -426,6 +426,15 @@
               <traits count="0" tested="0" percent="0"/>
             </totals>
           </file>
+          <file name="ResourceLockAction.php" href="infrastructure/Actions/ResourceLockAction.php.xml">
+            <totals>
+              <lines total="71" comments="6" code="65" executable="14" executed="0" percent="0.00"/>
+              <methods count="1" tested="0" percent="0.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="0" percent="0.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
           <file name="ResourceUnlockAction.php" href="infrastructure/Actions/ResourceUnlockAction.php.xml">
             <totals>
               <lines total="71" comments="5" code="66" executable="17" executed="16" percent="94.12"/>
@@ -447,7 +456,7 @@
         </directory>
         <directory name="Http">
           <totals>
-            <lines total="108" comments="25" code="83" executable="21" executed="17" percent="80.95"/>
+            <lines total="117" comments="25" code="92" executable="25" executed="18" percent="72.00"/>
             <methods count="1" tested="0" percent="0.00"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="1" tested="0" percent="0.00"/>
@@ -500,7 +509,7 @@
           </directory>
           <file name="Router.php" href="infrastructure/Http/Router.php.xml">
             <totals>
-              <lines total="56" comments="5" code="51" executable="21" executed="17" percent="80.95"/>
+              <lines total="65" comments="5" code="60" executable="25" executed="18" percent="72.00"/>
               <methods count="1" tested="0" percent="0.00"/>
               <functions count="0" tested="0" percent="0"/>
               <classes count="1" tested="0" percent="0.00"/>

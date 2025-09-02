@@ -31,7 +31,6 @@ class Resource
     public ?string $name = null;
     #[IntType]
     #[ValidateInt]
-    #[ValidateGreater(0)]
     public int|null $timeout {
         get {
             if ($this->timeout === null) {

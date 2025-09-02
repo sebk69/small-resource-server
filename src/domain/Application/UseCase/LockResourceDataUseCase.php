@@ -34,7 +34,7 @@ class LockResourceDataUseCase implements UseCaseInterface
             );
         }
 
-        $resource = Kernel::$resourceFactory->get($request->resourceName . ':' . $request->selector);
+        $resource = Kernel::$resourceFactory->get($request->resourceName);
 
         $resourceDefinition = $this->resourceManager->findByName($request->resourceName);
 
@@ -50,11 +50,12 @@ class LockResourceDataUseCase implements UseCaseInterface
             $time = time();
             do {
                 $ticket = $resource->acquireResource(GetResourceBehaviour::getTicket, $ticket);
-            } while($ticket->isWaiting() && $time + $resourceDefinition->timeout < time());
+                usleep(1000);
+            } while($ticket->isWaiting() && $time + $resourceDefinition->timeout > time());
 
         }
 
-        return new class(!$ticket->isWaiting(), $ticket->getTicketId())
+        return new class(!$ticket->isWaiting(), $ticket?->getTicketId())
             implements LockResourceDataResponseInterface
         {
             public function __construct(

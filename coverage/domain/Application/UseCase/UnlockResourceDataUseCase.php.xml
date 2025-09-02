@@ -231,16 +231,6 @@
         <token name="T_VARIABLE">$request</token>
         <token name="T_OBJECT_OPERATOR">-&gt;</token>
         <token name="T_STRING">resourceName</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_DOT">.</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_CONSTANT_ENCAPSED_STRING">':'</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_DOT">.</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_VARIABLE">$request</token>
-        <token name="T_OBJECT_OPERATOR">-&gt;</token>
-        <token name="T_STRING">selector</token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>

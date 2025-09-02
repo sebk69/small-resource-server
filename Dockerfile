@@ -46,7 +46,7 @@ RUN cp /usr/share/zoneinfo/$timezone /etc/localtime \
 # Répertoire application
 COPY --chown=www-data:www-data . /app
 WORKDIR /app
-RUN composer update
+RUN composer install
 
 # (Optionnel) Paramètres Swoole
 # Désactive les short names si vous préférez l'espace de noms complet \Swoole\Coroutine
