@@ -1,4 +1,4 @@
-# Small Swoole Resource Server
+<img src="img/small-resource-server.png">
 
 <img src="img/tests-badge.png" width="200px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/coverage-badge.png" width="200">
 
